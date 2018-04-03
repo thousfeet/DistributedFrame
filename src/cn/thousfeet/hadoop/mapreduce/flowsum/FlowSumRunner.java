@@ -30,8 +30,8 @@ public class FlowSumRunner extends Configured implements Tool{
 		job.setMapperClass(FlowSumMapper.class);
 		job.setReducerClass(FlowSumReducer.class);
 		
-		job.setMapOutputKeyClass(Text.class);
-		job.setMapOutputValueClass(LongWritable.class);
+//		job.setMapOutputKeyClass(Text.class);
+//		job.setMapOutputValueClass(LongWritable.class);
 		
 		job.setOutputKeyClass(Text.class);
 		job.setOutputValueClass(FlowBean.class);
